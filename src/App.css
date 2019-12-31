@@ -1,38 +1,185 @@
-.App {
-  text-align: center;
+.search-container {
+  margin: 40px 0px;
+  display: flex;
+  justify-content: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search-container input {
+  width: 60%;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  color: grey;
+  padding-left: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search-container input:focus {
+  outline: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.star-rating {
+  font-size: 24px;
+  padding-left: 10px;
+}
+.Movie-Container {
+  border: 1px solid rgba(211, 211, 211, 0.8);
+  box-shadow: lightgray;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 250px;
+  height: 550px;
+  overflow: hidden;
+
+  margin: 20px 40px;
+}
+img {
+  width: 250px;
+  height: 375px;
+}
+.star-rating-movie {
+  font-size: 24px;
+  padding-left: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  bottom: 375px;
+  padding: 0 10px;
+}
+.Movie-Title {
+  font-size: 22px;
+  margin: 0px 10px;
+  height: 60px;
+}
+.Movie-Date-Release {
+  font-size: small;
+  margin: 10px 10px 10px 10px;
+}
+.Movie-List {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-btn-container{
+  display: flex;
+}
+.card-btn{
+  border-radius: 5px;
+  background-color: lightseagreen;
+  border: transparent;
   color: white;
+  padding: 8px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.card-btn:hover {
+  background-color: rgba(32, 178, 170, 0.8);
+}
+.card-btn:focus{
+  outline: 0;
+}
+.description-btn{
+  /* display: none; */
+  margin-left: 40px;
+  border-radius: 5px;
+  background-color: lightskyblue;
+  border: transparent;
+  color: white;
+  padding: 8px 20px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  width: 76%;
+  font-size: 16px;
+}
+.description-btn:focus {
+  outline: 0;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.Add-btn {
+  border-radius: 5px;
+  background-color: lightseagreen;
+  border: transparent;
+  color: white;
+  padding: 8px 20px;
+  margin-left: 40px;
+  margin-bottom: 30px;
+  cursor: pointer;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.Add-btn:hover {
+  background-color: rgba(32, 178, 170, 0.8);
+}
+.Add-btn:focus {
+  outline: 0;
+}
+form h1 {
+  text-decoration: underline;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+form input {
+  width: 98%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  color: grey;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+form label {
+  margin-top: 20px;
+}
+form input:focus {
+  outline: 0;
+}
+.Modal-btn {
+
+  border-radius: 5px;
+  background-color: lightseagreen;
+  border: transparent;
+  color: white;
+  padding: 8px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.Modal-btn:hover {
+  background-color: rgba(32, 178, 170, 0.8);
+}
+.Modal-btn:focus {
+  outline: 0;
+}
+.Spinner{
+  width: 70px;
+  margin-left: 45%;
+  margin-top: 15%;
+  margin-bottom: 15%;
+  z-index: 1;
+}
+.Movie-Description{
+  display: flex;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.Movie-Description-informations{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.Movie-Description-Image{
+height: 30%;
+width:30%;
+}
+.star-rating-movie-Description{
+  font-size: 25px;
+  align-self: flex-start;
+}
+.Link{
+  margin-left: 40px;
+  border-radius: 5px;
+  background-color: lightseagreen;
+  border: transparent;
+  color: white;
+  padding: 8px 20px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+  text-decoration: none;
 }
